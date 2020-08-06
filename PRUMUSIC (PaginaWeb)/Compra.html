@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PRUMUSIC</title>
+    <link rel="shortcut icon" href="Imagenes/logo.ico" />
+    <link rel="stylesheet" href="css/PrincipalEstilos.css">
+    <link rel="stylesheet" href="css/CargaEstilos.css">
+    <link rel="stylesheet" href="css/ProdEstilos.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript">
+        
+    $(window).load(function(){
+        $("#Carga").delay(2000).fadeOut("slow");
+    });
+    </script>
+    
+     <style type="text/css">
+           #Carga{
+        display:block;
+        background: #000;
+        color: white;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 1000;
+           }
+        #Carga p{
+            font-family:sans-serif;
+            display: block;
+            width: 108px;
+            height: 88px;
+            font-size: 30px;
+            position: top;
+            top: 0;
+            left: 0;
+            bottom:0;
+            right: 0;
+            margin: 430px;
+        }
+  
+            * {
+                box-sizing: border-box;
+            }
+
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+            
+/*Boton animado*/
+            input[type=text] {
+                width: 210px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background-position: 10px 10px;
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 20px;
+                transition: width 0.2s ease-in-out;
+}
+
+
+input[type=text]:focus{
+    width: 60%;}
+            
+
+            input[type=submit] {
+                background-color: #4caf50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            .contenedor {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+
+            .col-25 {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+
+            .col-75 {
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+
+            /* Borra flotadores despues de las columnas */
+            .fila:after {
+                content: "";
+                display:  table;
+                clear: both;
+            }
+
+            /*Cuando la pantalla es menor a 600px de ancho, hace que 
+            las dosapilen una encima de la otra en el lugar de una al
+            lado de la otra */
+            @media screen and (max-width: 600px) {
+                .col-25, .col-75, input[type=submit] {
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
+
+        </style>
+        
+    </head>
+      <span id="Carga">
+        
+    <p><img src="Imagenes/Carga.gif"></p></span>
+    <body>
+        <header class="enca">
+        <div class="wrapper">
+           
+            
+            <nav2>
+            <a href="https://twitter.com/PROMUSI34846014" target="_blank"><img height="20" src="imagenes/Twitter.png" alt=""></a>
+            <a href="https://www.facebook.com/?redirect=false" target="_blank"><img height="22" src="imagenes/Facebook.png"></a>
+            <a href="https://www.instagram.com/promusic6817/" target="_blank"><img height="25" src="imagenes/Instagram.png"></a>
+            <a href="Carrito.html" target="_blank"><img height="25" src="imagenes/Carrito.png"></a>
+
+            </nav2> 
+        <nav>
+        <a href="index.html"> <img src="Imagenes/logo.png"></a>
+        <a href="Nosotros.html">NOSOTROS</a>
+        <a href="Tienda.html">TIENDA</a>
+        <a href="Contactanos.html">CONTACTO</a>
+        <a href="Sucursales.html">SUCURSALES</a>
+        </nav>
+        
+    
+    </div>
+       
+    </header>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <Font SIZE=10> <b style = "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+Ya casi acabamos!  </b> </Font>
+
+        <div class="contenedor">
+  
+            <form action="/Enviar.php">
+            <div class="fila">
+                <div class="col-25">
+                    <label for="nombre"> <Font COLOR="7E8582" SIZE=4 ><b style = "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        Nombre y Apellidos  </b> </Font>
+                        </br></Font></label>                    
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu Nombre y apellidos...">                    
+                </div>
+            </div>
+            <div class="fila">
+            <div class="col-25">
+            <label for="appellido"> <Font COLOR="7E8582" SIZE=4 ><b style = "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                Codigo Postal </b> </Font>
+                </br></Font></label>
+                
+                
+        </div>
+           
+            <div class="col-75">
+            <input type="text" id="apellido" name="apellido" placeholder="CodigoPostal..">
+        </div>
+    </div>
+    
+    
+    <div class="fila">
+            <div class="col-25">
+            <label for="appellido"> <Font COLOR="7E8582" SIZE=4 ><b style = "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                Calle </b> </Font>
+                </br></Font></label>
+                 </div>
+           
+            <div class="col-75">
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu calle..">
+            
+        </div>
+        
+    </div>
+            <div class="fila">
+            <div class="col-25">
+            <label for="appellido"> <Font COLOR="7E8582" SIZE=4 ><b style = "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                N° Casa </b> </Font>
+                </br></Font></label>
+                
+                
+        </div>
+           
+            <div class="col-75">
+            <input type="text" id="apellido" name="apellido" placeholder="CodigoPostal..">
+            
+        </div>
+    </div> 
+                   
+                    
+                
+    <Font COLOR="7E8582" SIZE=4 ><b style = "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Sexo </b> </Font>
+        </br></Font>
+    <input type="radio" name="Sexo[]" value="Masculino" checked="checked">Masculino</input>
+    <input type="radio" name="Sexo[]" value="Femenino">Femenino</input>
+            <div class="fila">
+            <div class="col-25">
+            <label for="pais"> <Font COLOR="7E8582" SIZE=4 ><b style = "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                Pais </b> </Font>
+                </br></Font></label>
+        </div>
+            <div class="col-75">
+            <select id="pais" name="pais">
+                <option value="mexico">Mexico</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="usa">OTRO</option>
+            </select>
+        </div>
+    </div>
+    
+            <div class="fila">
+            <div class="col-25">
+            <label for="tema"> <Font COLOR="7E8582" SIZE=4 ><b style = "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                Referencias </b> </Font>
+                </br></Font></label>
+        </div>
+            <div class="col-75">
+            <textarea id="tema" name="tema" placeholder="Escribe tus comentarios.." style="height:200px">
+            </textarea>
+        </div>
+    </div>
+    <font SIZE="2"><p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Al hacer clic en "Enviar", aceptas nuestras Condiciones, la
+        Política de datos y la Política de cookies. Es posible que 
+        te enviemos notificaciones por SMS, que puedes desactivar
+        cuando quieras..Mensaje de Prueba</p></font>
+            <div class="fila">
+            <input type="submit" value="Enviar" alt="Principal.html">
+        </div>
+        </form>
+        </div>
+    
+    </body>
+</html>

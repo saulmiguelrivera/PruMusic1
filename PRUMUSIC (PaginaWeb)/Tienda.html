@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TIENDA</title>
+    <link rel="shortcut icon" href="Imagenes/logo.ico" />
+    <link rel="stylesheet" href="css/PrincipalEstilos.css">
+    <link rel="stylesheet" href="css/CargaEstilos.css">
+    <link rel="stylesheet" href="css/TiendaEstilos.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, 
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript">
+        
+    $(window).load(function(){
+        $("#Carga").delay(2000).fadeOut("slow");
+    });
+    </script>
+    
+     <style type="text/css">
+           #Carga{
+        display:block;
+        background: #000;
+        color: white;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 1000;
+           }
+        #Carga p{
+            font-family:sans-serif;
+            display: block;
+            width: 108px;
+            height: 88px;
+            font-size: 30px;
+            position: top;
+            top: 0;
+            left: 0;
+            bottom:0;
+            right: 0;
+            margin: 430px;
+        }
+    </style>
+    </head>
+    <span id="Carga">
+        
+    <p><img src="Imagenes/Carga.gif"></p></span>
+<body>
+    
+    <header class="enca">
+        <div class="wrapper">
+           
+            
+            <nav2>
+            <a href="https://twitter.com/PROMUSI34846014" target="_blank"><img height="20" src="imagenes/Twitter.png" alt=""></a>
+            <a href="https://www.facebook.com/?redirect=false" target="_blank"><img height="22" src="imagenes/Facebook.png"></a>
+            <a href="https://www.instagram.com/promusic6817/" target="_blank"><img height="25" src="imagenes/Instagram.png"></a>
+            <a href="Carrito.html" target="_blank"><img height="25" src="imagenes/Carrito.png"></a>
+            </nav2> 
+        <nav>
+        <a href="index.html"> <img src="Imagenes/logo.png"></a>
+        <a href="Nosotros.html">NOSOTROS</a>
+        <a href="Tienda.html">TIENDA</a>
+        <a href="Contactanos.html">CONTACTO</a>
+        <a href="Sucursales.html">SUCURSALES</a>
+        </nav>
+    </div>
+    </header>
+    <br>
+    <br>
+    <div class="container" >
+            <div class="box">
+                <img src="ImagenesInstrumentos/1.png">
+                <span><a style="text-decoration:none;color: black;"  href="ProdCuerdas.html">Cuerdas</span></a>
+                
+    </div>
+            <div class="box">
+                <img src="ImagenesInstrumentos/2.jpg">
+                <span><a style="text-decoration:none;color: black;"  href="ProdViento.html">Viento</span></a>
+    </div>
+            <div class="box">
+                <img src="ImagenesInstrumentos/3.jpg">
+                <span><a style="text-decoration:none;color: black;"  href="ProdPercusion.html">Percusión</span></a>
+                
+    </div>
+            <div class="box">
+                <img src="ImagenesInstrumentos/4.jpg">
+                <span><a style="text-decoration:none;color: black;"  href="ProdPianos.html">Pianos</span></a>
+    </div>
+</div>
+    
+        
+</body>
+</html>

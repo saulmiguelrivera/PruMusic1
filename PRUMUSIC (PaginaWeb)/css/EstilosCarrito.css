@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif, bold;
+    
+
+    
+}
+/*Encabezado con Estilo*/
+.encabezado {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+/*Crea tres columnas iguales que floten una al lado de la otra*/
+
+.columna{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+}
+/*Borrar flotadores despues de las columnas*/
+.fila:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Estilo al pie de pagina*/
+.pie_pag{
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+/*diseño responsivo: hace que las tres columnas se apilen una encima de la otra en lugar de una al lado de otra*/
+@media (max-width: 600px){
+    .columna {
+        width: 100%;
+    }
+}
